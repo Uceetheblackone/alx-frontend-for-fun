@@ -5,7 +5,7 @@ import markdown2
 
 def convert_markdown_to_html(input_file, output_file):
     if not os.path.exists(input_file):
-        sys.stderr.write(f"Missing {input_file}\n")
+        sys.stderr.write("Missing {}\n".format(input_file))
         sys.exit(1)
 
     with open(input_file, 'r') as f:
